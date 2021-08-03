@@ -1,0 +1,17 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Key Checker
+body
+    p Key= #{privateKey}
+    p WIF= #{WIF}
+    p Bitcoin Adress= #{adress}
+    #WIFtype
+    form(method='GET' action='/')
+        input(type='submit' name='Go Back')
+    script.
+        document.getElementById("WIFtype").innerHTML = "#{WIFtype}"
+
+
+
+

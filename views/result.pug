@@ -1,0 +1,41 @@
+doctype html
+head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    title Bitcoin Private Key Checker
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='assets/fonts/fontawesome-all.min.css')
+    link(rel='stylesheet' href='assets/fonts/font-awesome.min.css')
+    link(rel='stylesheet' href='assets/fonts/fontawesome5-overrides.min.css')
+    link(rel='stylesheet' href='assets/css/Features-Boxed.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel='stylesheet' href='assets/css/styles.css')
+section.features-boxed
+    .container(style='text-align: center;')
+        .intro
+            h2.text-center(style='font-size: 59px;color: var(--bs-teal);') Result
+        .row.justify-content-center.features
+            .col-sm-6.col-md-7.col-lg-4.col-xl-10.offset-md-0.item
+                .box(data-bss-hover-animate='pulse')
+                    i.fas.fa-door-closed.icon(style='font-size: 80px;')
+                    h3.name(style='font-size: 30px;') Private Key
+                    p.description(style='font-size: 25px;height: 51.8px;') #{privateKey}
+                .box(data-bss-hover-animate='pulse')
+                    i.fas.fa-door-open.icon(style='font-size: 80px;')
+                    h3.name(style='font-size: 30px;') Adress
+                    p.description(style='font-size: 25px;') #{adress}
+            .col-sm-6.col-md-7.col-lg-4.col-xl-10.item
+                .box(data-bss-hover-animate='pulse')
+                    i.fa.fa-wifi.icon(style='font-size: 80px;')
+                    h3.name(style='font-size: 30px;') WIF
+                    p.description(style='font-size: 25px;') #{WIF}
+            .col-sm-6.col-md-7.col-lg-4.col-xl-10.offset-md-0.item
+                .box(data-bss-hover-animate='pulse')
+                    i.fa.fa-money.icon(style='font-size: 80px;')
+                    h3.name(style='font-size: 30px;') Balance
+                    p.description(style='font-size: 25px;') #{balance}
+            .col-xl-10.offset-xl-0
+                button.btn.btn-primary(data-bss-hover-animate='pulse' onclick='window.location.href = "/"' type='button' style='width: 123.5px;height: 64px;font-size: 31px;color: var(--bs-blue);background: #eef4f7;')
+                    strong Return
+script(src='assets/bootstrap/js/bootstrap.min.js')
+script(src='assets/js/bs-init.js')
